@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 50%;
     height: 50%;
-    background-color: var(--game-theme-color);
+    background-color: rgba(4, 161, 140, 0.95);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -13,12 +13,18 @@
     font-family: "Press Start 2P", cursive;
     color: white;
     z-index: 12;
+
+    @media (max-width: 768px) {
+        width: 85%;
+        height: 60%;
+    }
 }
 
 .heading {
     font-size: 32px;
     margin: 10px 0;
     text-align: center;
+    font-weight: bold;
 
     /* font-family: "Press Start 2P", cursive; */
     transition: all 0.3s ease-in-out;
@@ -28,14 +34,9 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-    @media (max-width: 768px) {
-        font-size: 20px;
-    }
-    @media (max-width: 480px) {
-        font-size: 16px;
-    }
+
     @media (max-width: 320px) {
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 
