@@ -56,7 +56,7 @@ const PlayerInfo = ({ onStart }: PlayerInfoProps) => {
                         playerCount={2}
                     />
                 </div>
-
+                <button onClick={onGameStart}>Start Game</button>
                 {!showInstructions && (
                     <p
                         className='game-instruction'
@@ -72,20 +72,23 @@ const PlayerInfo = ({ onStart }: PlayerInfoProps) => {
                         onClick={() =>
                             setShowInstructions((prev: boolean) => !prev)
                         }>
-                        Instructions: <br />
-                        1. Players take turns placing their marks (X or O) on
-                        the grid. <br />
+                        <span
+                            style={{ fontWeight: "bold", fontSize: "0.8rem" }}>
+                            Instructions: <br />
+                        </span>
+                        1. Players take turns placing their marks (
+                        <span style={{ color: "white" }}>X</span> or{" "}
+                        <span style={{ color: "white" }}>O</span>) on the grid.{" "}
+                        <br />
                         2. The first player to get three marks in a row
-                        (horizontally, vertically, or diagonally) wins. <br />
+                        (horizontally, vertically, or diagonally) wins.🥇 <br />
                         3. If all nine squares are filled and no player has
                         three in a row, the game is a draw. <br />
-                        4. Have fun and good luck!
+                        4. Have fun and good luck! 🎉
                         <br />
                     </p>
                 )}
             </div>
-
-            <button onClick={onGameStart}>Start Game</button>
         </section>
     );
 };
