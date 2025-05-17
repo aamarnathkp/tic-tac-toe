@@ -56,7 +56,9 @@ const PlayerCard = ({ color, playerCount, name, symbol }: PlayerCardProps) => {
                     {playerName} ({symbol})
                 </p>
             )}
-            <button type='submit'>{isEditing ? "Save" : "Edit"}</button>
+            <button className='player-name-btn ' type='submit'>
+                {isEditing ? "Save" : "Edit"}
+            </button>
         </form>
     );
 };

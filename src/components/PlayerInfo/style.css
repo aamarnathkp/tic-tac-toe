@@ -138,3 +138,22 @@
         max-height: 80px;
     }
 }
+
+.player-name-btn {
+    font-size: 20px;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 160px;
+    overflow-y: scroll;
+
+    @media (max-height: 680px) {
+        max-height: 80px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+/* Compare this snippet from src/components/PlayerInfo/index.js: */
