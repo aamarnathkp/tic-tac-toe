@@ -38,5 +38,5 @@ A fun twist on the classic Tic-Tac-Toe game! This is a **2-player** game where e
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/tic-tac-toe.git
+    https://github.com/aamarnathkp/tic-tac-toe
     ```
